@@ -1,0 +1,32 @@
+body{background-image: url(imagess/project-2.jpg);
+	 background-repeat:repeat;
+	 background-size: 100%;
+	 background-position: center;
+	 background-attachment: scroll;
+	 font-family:cursive;
+	 font-size: 15px;
+	 padding: 0;
+	 margin-top:4em;}
+.align{text-align: right}
+p{font-color: black; 
+	}
+.container {
+    background-image:url(imagess/img_bg_2.jpg);
+    width: 93%; /* adjust this to the proper width */
+    margin: 0 auto;text-align: left;
+}
+.container1{
+    background-color: white;
+    width: 93%; /* adjust this to the proper width */
+    margin: 0 auto;
+}
+.a0{padding:8px;
+	margin:8px;
+	font-size: 30px;
+	}
+.a1{padding:10px;
+	margin:10px;
+	}
+.a2{padding:15px;
+	margin:15px;
+	}
