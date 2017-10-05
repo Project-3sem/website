@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>hometest</title>
+<meta name="content" viewport="width=device-width,initial-scale= 1.0" />
+ <style>
+     .content1 {
+   
+   background-color: #061c66;
+   font-size: 30px;
+   padding: 20px;
+   height: 200px;
+ 
+}
+.content2 {
+  height: 50px;
+  border: 1px solid red;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  background-color: #061c66;
+  font-size: 30px;
+  border-radius : 30px;
+  color: white; 
+}
+.content3 {
+  height: 980px;
+  background-color: #d4d8dd;
+  background-image: url(ban.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+li {
+ display: inline; 
+}
+.a { /*style for link of menu*/
+ text-decoration: none;
+ 
+ border-radius: 10px;
+ margin-left: 35px;
+ color: #e8eef7;
+
+}
+.menu { /*style for menu*/
+  margin: 80px 0px 0px 400px;
+  padding: 20px;
+ 
+  
+}
+p {
+  margin-left: 10px;
+}
+
+.div1 {
+ margin-left: 300px;
+ 
+ border: 2px solid red;
+ height: 400px;
+ width: 1200px;
+}
+.div2 {
+  border: 2px solid blue;
+  height: 500px;
+  width: 600px;
+  margin-left: 600px;
+  
+}
+img {
+  height:80px;
+  width: 80px;
+  background-color: #061c66;
+}
+.footer {
+  font-size: 25px;
+  color: white;
+  font-family: Times;
+  font-size: 20px;
+  background-color: #061c66;
+  height: 250px;
+}
+
+
+
+
+
+
+   /* for || (screen) < 992px  || */
+@media (max-width: 992px)  {
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-rows: 200px 50px 850px 300px;
+  grid-row-gap: 5px;
+  
+}
+ .content {
+
+   border: 1px solid black;
+   background-color: #0e3d87;
+  
+   }
+a {   /*style for link of menu*/
+ text-decoration: none;
+ margin:30px 0px 0px 20px;
+ border-radius: 10px;
+ font-size: 28px;
+ color: #e8eef7;
+ /*background-color: #d4d8dd;*/
+ color: white;
+}
+.menu {    /*style for menu*/
+  display: inline-block;
+  position: absolute;
+  margin: 70px 0px 0px 70px;
+  padding: 10px;
+ }
+div:nth-child(3) {
+  background-color: #d4d8dd;
+  background-repeat: no-repeat;
+
+}
+div:nth-child(2) {
+ 
+padding: 2px;
+}
+.div1 {
+  
+  height: 25%;
+ margin: auto;
+  width: 70%;
+  
+}
+.div2 {
+ height: 40%;
+ width: 40%;
+ margin: auto;
+
+ margin-top: 20px;
+}
+li {
+  display: inline;
+}
+p {
+    font-size: 30px;
+    
+}
+.footer {
+   height: auto;
+    
+}
+.content3 {
+  height: 970px;
+  width: 100%;
+  background-color: #d4d8dd;
+  
+  background-size: resize;
+  background-repeat: no-repeat;
+ 
+}
+#img {
+    position: relative;
+   
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+    
+}
+}  
+     
+ </style>
+</head>
+<body>
+
+
+   <div class="content1">
+      <ul class="menu">
+     <!--   <img src="book.jpg" alt="book-icon" /> -->
+      <li>  <a href="hometest.html" target="_self" class="a">Home</a> </li> 
+      <li>  <a href="sectiontest.html" target="_self" class="a">Seminar-videos</a> </li>
+       <li> <a href="#Course videos" target="_self" class="a">Course-videos</a> </li>
+      <li>  <a href="#Activity" target="_self" class="a">Activity-log</a> </li>
+    </ul>
+   </div> 
+<div class="content2"><marquee><span style="color: #e1f307;text-shadow: 4px 4px 4px black;">*new</span> Notification ......this is a data structure & algorithm page---</marquee></div>
+
+<div class="content3" id="img">
+  <br>  
+        <div class="div1"></div>
+  <br>
+        <div class="div2"></div>
+      
+ </div>
+      <div class="footer"> 
+  <br> 
+         <p>ISE Department student group </p>
+         <p>CMR institute of technology <div style="float:right;"><span style="margin-left: 10px;"><a href="#facebook"><img src="facebook.png" atl=""/></a></span><a href="#in"><img src="linked-in.png" alt=""/></a><a href="#twitter"><img src="twitter.png"/></a></div><br>
+          
+          <span>#132 AECS Layout ITPL Main Road Kundalahalli, </span><br><br>
+          <span>Bengaluru  Karnatak 560037, india </span> </p>
+   
+        </div>
+
+
+</body>
+</html>
