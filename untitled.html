@@ -1,0 +1,97 @@
+e<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title> helllo world </title>
+	<link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d"/>
+	<meta charset="utf-8">
+	<link rel="img" href="/imagess">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css"  href="untitled.css"/>
+</head>
+<body>
+<hi> this is test</hi>
+<div  class="container">
+<div class="slides1  fade">
+
+	<img src="imagess/person1.jpg" width=" 250px" height:="160px"/><div class="text">hii</div>
+</div>
+<div class="slides1 fade">
+	<img src="imagess/person2.jpg" width=" 250px" height:="160px" /><div class="text">i am</div>
+</div>
+<div class="slides1 fade">
+	<img src="imagess/person3.jpg" width=" 250px" height:="160px"/><div class="text">kishore</div>
+</div>
+
+</div>
+<div  class="container2">
+<div class="slides2  fade">
+
+	<img src="imagess/person1.jpg" width=" 250px" height:="160px"/><div class="text">hii</div>
+</div>
+<div class="slides2 fade">
+	<img src="imagess/person2.jpg" width=" 250px" height:="160px" /><div class="text">i am</div> 
+</div>
+<div class="slides2 fade">
+	<img src="imagess/person3.jpg" width=" 250px" height:="160px"/><div class="text">kishore</div>
+</div>
+
+</div>
+<div  class="container3">
+<div class="slides3  fade">
+
+	<img src="imagess/person1.jpg" width=" 250px" height:="160px"/><div class="text">hii</div>
+</div>
+<div class="slides3 fade">
+	<img src="imagess/person2.jpg" width=" 250px" height:="160px"/><div class="text">i am</div>
+</div>
+<div class="slides3 fade">
+	<img src="imagess/person3.jpg" width=" 250px" height:="160px"/><div class="text">kishore</div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+	
+	 sliding();
+
+		function sliding(){
+			
+			 
+	var slide1=document.getElementsByClassName("slides1");f1(slide1);
+	var slide2=document.getElementsByClassName("slides2");f2(slide2);
+	var slide3=document.getElementsByClassName("slides3");f3(slide3);
+			}	
+	function f1(slide1){
+		var i;var indexslide=0;
+			
+			for(i=0;i<slide1.length;i++){
+				slide1[i].style.display="none";
+			}
+			indexslide++;
+    if (indexslide > slide1.length) {indexslide = 1}
+
+    slide1[indexslide-1].style.display = "block";
+    setTimeout(f1, 2000);
+		}
+	function f2(slide2){
+		var i;var indexslide=0;
+			for(i=0;i<slide2.length;i++){
+				slide2[i].style.display="none";
+			}
+			indexslide++;
+    if (indexslide > slide2.length) {indexslide = 1}
+    slide2[indexslide-1].style.display = "block";
+    setTimeout(f2, 2000);}
+
+	function f3(slide3){
+		var i;var indexslide=0;
+			for(i=0;i<slide3.length;i++){
+				slide3[i].style.display="none";
+			}
+			indexslide++;
+    if (indexslide > slide3.length) {indexslide = 1}
+    slide3[indexslide-1].style.display = "block";
+    setTimeout(f3, 2000);}
+
+	</script>
+	</body></html>
