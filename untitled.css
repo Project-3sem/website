@@ -43,7 +43,7 @@ bottom: 140px;
       margin-left: 820px;
     bottom: 400px;
 } 
-}
+
 
 .serif {
   font-family: Times, Times New Roman, Georgia, serif;
@@ -73,29 +73,6 @@ a{text-decoration: none;
   from {opacity: .6}
   to {opacity: 1.0}
 }
-}
 
-.sansserif {
-  font-family: Verdana, Arial, Helvetica, sans-serif;}
 
-a{text-decoration: none;
-    text-decoration-color: black;
-    text-decoration-line: none;
-    text-decoration-style: solid;}
-  .fade {
 
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
-  animation-name: fade;
-  animation-duration: 2s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: .6}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: .6}
-}
