@@ -1,5 +1,4 @@
 <!--slide show stuff-->
-
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -15,84 +14,89 @@
 <div  class="container">
 <div class="slides1  fade">
 
-	<img src="imagess/person1.jpg" width=" 250px" height:="160px"/><div class="text">hii</div>
+	<img src="/home/kishore/abc/imagess/img_bg_2.jpg" width=" 300px" height:="200px"/><div class="text">hii</div>
 </div>
 <div class="slides1 fade">
-	<img src="imagess/person2.jpg" width=" 250px" height:="160px" /><div class="text">i am</div>
+	<img src="/home/kishore/abc/imagess/img_bg_3.jpg" width=" 300px" height:="200px" /><div class="text">i am</div>
 </div>
 <div class="slides1 fade">
-	<img src="imagess/person3.jpg" width=" 250px" height:="160px"/><div class="text">kishore</div>
+	<img src="/home/kishore/abc/imagess/img_bg_4.jpg" width=" 300px" height:="200px"/><div class="text">kishore</div>
 </div>
 
 </div>
 <div  class="container2">
 <div class="slides2  fade">
 
-	<img src="imagess/person1.jpg" width=" 250px" height:="160px"/><div class="text">hii</div>
+	<img src="/home/kishore/abc/imagess/img_bg_2.jpg" width=" 500px" height:="400px"/><div class="text"  style="bottom:200px; font-size:150%">hii</div>
 </div>
 <div class="slides2 fade">
-	<img src="imagess/person2.jpg" width=" 250px" height:="160px" /><div class="text">i am</div> 
+	<img src="/home/kishore/abc/imagess/img_bg_3.jpg" width=" 500px" height:="400px" /><div class="text" style="bottom:200px; font-size:150%">i am</div> 
 </div>
 <div class="slides2 fade">
-	<img src="imagess/person3.jpg" width=" 250px" height:="160px"/><div class="text">kishore</div>
+	<img src="/home/kishore/abc/imagess/img_bg_4.jpg" width=" 500px" height:="400px"/><div class="text" style="bottom:200px; font-size:150%">kishore</div>
 </div>
 
 </div>
 <div  class="container3">
 <div class="slides3  fade">
 
-	<img src="imagess/person1.jpg" width=" 250px" height:="160px"/><div class="text">hii</div>
+	<img src="/home/kishore/abc/imagess/img_bg_2.jpg" width=" 300px" height:="200px"/><div class="text">hii</div>
 </div>
 <div class="slides3 fade">
-	<img src="imagess/person2.jpg" width=" 250px" height:="160px"/><div class="text">i am</div>
+	<img src="/home/kishore/abc/imagess/img_bg_3.jpg" width=" 300px" height:="200px"/><div class="text">i am</div>
 </div>
 <div class="slides3 fade">
-	<img src="imagess/person3.jpg" width=" 250px" height:="160px"/><div class="text">kishore</div>
+	<img src="/home/kishore/abc/imagess/img_bg_4.jpg" width=" 300px" height:="200px"/><div class="text">kishore</div>
 </div>
 
 </div>
 
 <script type="text/javascript">
 	
-	 sliding();
+	var indexslide=1;var indexslide2=2;var indexslide3=0;
+				f1();f2();f3();
 
-		function sliding(){
-			
-			 
-	var slide1=document.getElementsByClassName("slides1");f1(slide1);
-	var slide2=document.getElementsByClassName("slides2");f2(slide2);
-	var slide3=document.getElementsByClassName("slides3");f3(slide3);
-			}	
-	function f1(slide1){
-		var i;var indexslide=0;
-			
+					
+	function f1(){
+		var i; 
+			var slide1=document.getElementsByClassName("slides1");
 			for(i=0;i<slide1.length;i++){
 				slide1[i].style.display="none";
 			}
-			indexslide++;
-    if (indexslide > slide1.length) {indexslide = 1}
-
-    slide1[indexslide-1].style.display = "block";
+			if(indexslide==0||indexslide==1){indexslide=indexslide+2}
+			else if (indexslide==2){indexslide--;}
+	
+    if (indexslide >= slide1.length) {indexslide = 0}
+    	if(indexslide <0){insexslide=slide1.length}
+    		
+    slide1[indexslide].style.display = "block";
     setTimeout(f1, 2000);
 		}
-	function f2(slide2){
-		var i;var indexslide=0;
+
+		
+	function f2(){
+		var i;var slide2=document.getElementsByClassName("slides2");
 			for(i=0;i<slide2.length;i++){
 				slide2[i].style.display="none";
 			}
-			indexslide++;
-    if (indexslide > slide2.length) {indexslide = 1}
-    slide2[indexslide-1].style.display = "block";
+					if(indexslide2==0){indexslide2=indexslide2+2}
+			else if (indexslide2==2||indexslide2==1){indexslide2--;}
+    if (indexslide2 >= slide2.length) {indexslide2 = 0}
+    		if(indexslide2 <0){insexslide2=slide2.length}
+    slide2[indexslide2].style.display = "block";
     setTimeout(f2, 2000);}
 
-	function f3(slide3){
-		var i;var indexslide=0;
+
+	function f3(){
+		var i;var slide3=document.getElementsByClassName("slides3");
 			for(i=0;i<slide3.length;i++){
 				slide3[i].style.display="none";
 			}
-			indexslide++;
-    if (indexslide > slide3.length) {indexslide = 1}
-    slide3[indexslide-1].style.display = "block";
+			if(indexslide3==0||indexslide3==1){indexslide3=indexslide3+2}
+			else if (indexslide3==2){indexslide3--;}
+    if (indexslide3 >=slide3.length) {indexslide3 = 0}
+    		if(indexslide3 <0){insexslide3=slide3.length}
+    slide3[indexslide3].style.display = "block";
     setTimeout(f3, 2000);}
 
 	</script>
