@@ -7,33 +7,33 @@ body{background-color: #24292e;
 	 font-size: 15px;
 	font-style: normal; 
 	 padding: 0;
-	 margin-top:4em;
+	 margin-top:0;
 	 width:100%;
 		height:100%;}
 .align{text-align: right}
-p{font-color: black; padding: 10px;
+p{font-color: black; padding: 10px;margin-left: 1%;
 	}
  h3 {padding: 20px; font-size: 150%; }
 .container {
     background-image:url(https://upload.wikimedia.org/wikipedia/commons/0/01/Polish_Wikinews_header_image.png);
     width: 93%;
-    height: 140px;
+    height: 145px;
     background-size: 100%; /* adjust this to the proper width */
     margin: 0 auto;text-align: left;margin-right: 55px;
 }
 .container1{
     background-color:#f9fafc;
     width: 100%;
-    height: 800px; /* adjust this to the proper width */
-    margin-top: 94px;
+    height: 1000px; /* adjust this to the proper width */
+    margin-top: 65px;
 
 }table{float:right;margin-right:8em;display: inline-block;
-	position: relative;color:;
+	position: sticky;height: 50px;
 	}
-.a0{padding:8px;
-	margin:8px;
+.a0{padding:0;
+	margin:0;
 	font-size: 30px;
-	width: 600px;height: 30px;color: black;
+	width: 600px;height: 80px;color: black;
 	}
 .a1{padding:10px;
 	margin-right: 15em;
@@ -41,24 +41,93 @@ p{font-color: black; padding: 10px;
 	line-height: px;
 margin-left: 26px;color: #CEE6FA;
 	}
-.a2{padding:15px;
-	margin:15px;
+.a2{padding-top:0 auto;
+	padding-bottom: 0 auto;
+	margin:0;
 	}
 a{text-decoration: none;
 color: #CEE6FA;}
 a:hover{color:#A6CADA;}
 .imgs{float:left;border:solid;
 opacity: 1.0;
-margin-right: 2%;}
+margin-left: 1%;}
 .text {align-items: center;
-  color: black;
+  color: black	;
   font-size: 15px;
   padding: 8px 12px;
-      margin-top: 0;
-    margin-left: 20px;
-    margin-bottom: 150px;
+  bottom: 8px;
+margin-top: 6px;
+margin-right: 6px;
+margin-bottom: 50px;
+margin-left: 40px;;
   position: absolute;
+  bottom: 8px;
   
-  width: 100%;
 }
-.center{margin-left:20%;position: relative;}
+
+}.slide2{display: none}
+.slide1,.slide3{
+	display: none;opacity: .4
+}.container0 {
+
+  max-width: 300px;
+  max-height: 200px;
+  position:relative;
+  margin-left: 20px;opacity: 0.4;
+  -webkit-transition:-webkit-transform 2s;
+  transition:transform 2s;
+  width: 250px;
+top: 150px; 
+}
+.container2 {
+
+  max-width: 500px;
+max-height: 400px;
+  position:relative;
+  margin-left: 40px;
+  -webkit-transition:-webkit-transform 2s;
+  transition:transform 10s;
+  margin-left: 320px;
+bottom: 140px; 
+}
+.container3 {
+
+   max-width: 300px;
+  max-height: 200px;
+  position:relative;
+  margin-left: 60px;opacity: 0.4; 
+  -webkit-transition:-webkit-transform 2s;
+  transition:transform 10s;
+      margin-left: 820px;
+    bottom: 400px;
+} 
+}
+
+.serif {
+  font-family: Times, Times New Roman, Georgia, serif;
+}
+
+.sansserif {
+  font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+a{text-decoration: none;
+    text-decoration-color: black;
+    text-decoration-line: none;
+    text-decoration-style: solid;}
+  .fade {
+
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6}
+  to {opacity: 1.0}
+}.slideshow{position: absolute}
