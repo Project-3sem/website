@@ -3,15 +3,41 @@
 <head>
 <title>hometest</title>
 <meta name="content" viewport="width=device-width,initial-scale= 1.0" />
+<link rel="stylesheet" type="text/css"  href="js.css"/>
  <style>
-     .content1 {
-   
-   background-color: #061c66;
+ img {
+  border-radius: 30px;
+  border: none; 
+ }
+    .content1 {
+   #border: 2px solid red;
+   background-color:#061c66;
    font-size: 30px;
    padding: 20px;
-   height: 200px;
- 
+   height: 300px;
+   width: 100%;
+   background-image: url(menu.jpg);
+   
+   display: inline-block;
+  
+
+  
+  #background-image: url(keyboard.png); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+
 }
+.menu {    /*style for menu*/
+  
+
+ }
+ ul {
+ padding-top: 5%;
+    padding-left: 40%; 
+ }
+ h4 {
+   padding-right: 30%; 
+ }
 .content2 {
   height: 50px;
   border: 1px solid red;
@@ -25,7 +51,7 @@
 .content3 {
   height: 980px;
   background-color: #d4d8dd;
-  background-image: url(ban.jpg);
+  #background-image: url(ban.jpg);
   background-size: cover;
   background-repeat: no-repeat;
  
@@ -41,12 +67,7 @@ li {
  color: #e8eef7;
 
 }
-.menu { /*style for menu*/
-  margin: 80px 0px 0px 400px;
-  padding: 20px;
- 
-  
-}
+
 p {
   margin-left: 10px;
 }
@@ -65,7 +86,7 @@ p {
   margin-left: 600px;
   
 }
-img {
+.img {
   height:80px;
   width: 80px;
   background-color: #061c66;
@@ -75,11 +96,34 @@ img {
   color: white;
   font-family: Times;
   font-size: 20px;
-  background-color: #061c66;
+  background-color:  #808b96;
   height: 250px;
+}
+ #slide {
+    margin: auto;
+    #background-color: #09f7a3;
+    height: auto;
+    width: 100%;
+    display: inline-block;
+}
+.p1 {
+    float: right;
+    margin-left: 12%;
+}
+#slide1 {
+
+ margin: 3% 4%;
+  width: 80%;
+  height: 10%;
+ 
+}
+#data {
+   margin-top: 20px;
+   clear: both;
 }
 
 
+ 
 
 
 
@@ -115,6 +159,8 @@ a {   /*style for link of menu*/
   position: absolute;
   margin: 70px 0px 0px 70px;
   padding: 10px;
+  height: 200px;
+  width: auto;
  }
 div:nth-child(3) {
   background-color: #d4d8dd;
@@ -174,27 +220,131 @@ p {
 
 
    <div class="content1">
+ <!-- <marquee><span style="color: #e1f307;text-shadow: 4px 4px 4px black;margin-top: 50px;">*new</span> Notification ......this is a data structure & algorithm page---</marquee>
+  <br> -->
+   <h2><img src="cap.png" height="50px" width="50px">
+		  DATA STRCTURES AND APPLICATIONS</h2>
       <ul class="menu">
      <!--   <img src="book.jpg" alt="book-icon" /> -->
+     
+  <!--    <h2>DATA STRUCTURE <br> <span style="margin-left: 50px;"></span> AND ALGORITHM</h2> -->
+      
       <li>  <a href="homepage.html" target="_self" class="a">Home</a> </li> 
       <li>  <a href="sectionpage.html" target="_self" class="a">Seminar-videos</a> </li>
        <li> <a href="#Course videos" target="_self" class="a">Course-videos</a> </li>
       <li>  <a href="#Activity" target="_self" class="a">Activity-log</a> </li>
+      
     </ul>
    </div> 
-<div class="content2"><marquee><span style="color: #e1f307;text-shadow: 4px 4px 4px black;">*new</span> Notification ......this is a data structure & algorithm page---</marquee></div>
+<br>
+   <div id="slide">
+  <div id="slide1">
+ <div style="float: left; padding-top: 3%;">       
+<div class="slides1 fade">
+ 
+	<img src="float1.jpg" width=" 450px" height="300px"/>
+</div>
+<div class="slides1 fade">
+	<img src="float2.jpg" width=" 450px" height="300px" />
+</div>
+<div class="slides1 fade">
+	<img src="float3.jpg" width=" 450px" height="300px"/>
+</div>
+</div>
 
-<div class="content3" id="img">
-  <br>  
-        <div class="div1"></div>
-  <br>
-        <div class="div2"></div>
-      
+<div style="float: left;">
+<div class="slides2  fade">
+
+	<img src="float2.jpg" width=" 600px" height="500px"/>
+</div>
+<div class="slides2 fade">
+	<img src="float3.jpg" width=" 600px" height="500px" />
+</div>
+<div class="slides2 fade">
+	<img src="float4.jpg" width=" 600px" height="500px"/>
+</div>
+
+</div>
+
+<div style="float: left;padding-top: 3%;">
+<div class="slides3  fade">
+
+	<img src="float3.jpg" width=" 450px" height="300px"/>
+</div>
+<div class="slides3 fade">
+	<img src="float4.jpg" width=" 450px" height="300px"/>
+</div>
+<div class="slides3 fade">
+	<img src="float1.jpg" width=" 450px" height="300px"/>
+</div>
+</div>
+
+</div>
+<script type="text/javascript">
+	
+	var indexslide=1;var indexslide2=2;var indexslide3=0;
+				f1();f2();f3();
+
+					
+	function f1(){
+		var i; 
+			var slide1=document.getElementsByClassName("slides1");
+			for(i=0;i<slide1.length;i++){
+				slide1[i].style.display="none";
+			}
+			if(indexslide==0||indexslide==1){indexslide=indexslide+2}
+			else if (indexslide==2){indexslide--;}
+	
+    if (indexslide >= slide1.length) {indexslide = 0}
+    	if(indexslide <0){insexslide=slide1.length}
+    		
+    slide1[indexslide].style.display = "block";
+    setTimeout(f1, 2000);
+		}
+
+		
+	function f2(){
+		var i;var slide2=document.getElementsByClassName("slides2");
+			for(i=0;i<slide2.length;i++){
+				slide2[i].style.display="none";
+			}
+					if(indexslide2==0){indexslide2=indexslide2+2}
+			else if (indexslide2==2||indexslide2==1){indexslide2--;}
+    if (indexslide2 >= slide2.length) {indexslide2 = 0}
+    		if(indexslide2 <0){insexslide2=slide2.length}
+    slide2[indexslide2].style.display = "block";
+    setTimeout(f2, 2000);}
+
+
+	function f3(){
+		var i;var slide3=document.getElementsByClassName("slides3");
+			for(i=0;i<slide3.length;i++){
+				slide3[i].style.display="none";
+			}
+			if(indexslide3==0||indexslide3==1){indexslide3=indexslide3+2}
+			else if (indexslide3==2){indexslide3--;}
+    if (indexslide3 >=slide3.length) {indexslide3 = 0}
+    		if(indexslide3 <0){insexslide3=slide3.length}
+    slide3[indexslide3].style.display = "block";
+    setTimeout(f3, 2000);}
+
+	</script> 
+     
+   
+ <br><br>
+ <div id="data">
+ <h2>what is data structure?</h2>
+ <p><img src="datastructure.jpg" alt="" height="200px" width="200px" style="float: left;"> <span style="float: right;">Data Sturctures,as the name suggest it is organizing the data in a format so that accessing and manipulating the data becomes easy and efficient.Basic structuring of data comes with setting ordered lists of names or numbers as such. The type of data here is set of characters ie strings, intergers or real numbers (floating value). But whaen it comes to real life problems of handling data, coding for solving real life problems strings intergers will not suffice and requires datatypes which can hold multiple attributes or properties of the datatype instead of having just a name or number. Suppose we need a list of newly released cars with their specifications and the list to be updated. Data Structures provide us the power to solve this requirement in an efficient way by providing the provision to create user defined datatypes. Using this data can be sturctured as per the requirements in a way to increase efficiency of solving the problem reduce size of the code and also reduce excess memory requirements where ever possible.</span> </p>
+	</div>
+</div>
+ <br><br>
+ <div>
+    <img src="algo.jpg" alt="" height="200px" width="200px"> 
  </div>
       <div class="footer"> 
   <br> 
          <p>ISE Department student group </p>
-         <p>CMR institute of technology <div style="float:right;"><span style="margin-left: 10px;"><a href="#facebook"><img src="facebook.png" atl=""/></a></span><a href="#in"><img src="linked-in.png" alt=""/></a><a href="#twitter"><img src="twitter.png"/></a></div><br>
+         <p>CMR institute of technology <div style="float:right;"><span style="margin-left: 10px;"><a href="#facebook"><img src="facebook.png"  class="img"atl=""/></a></span><a href="#in"><img src="linked-in.png" class="img" alt=""/></a><a href="#twitter"><img src="twitter.png" class="img"/></a></div><br>
           
           <span>#132 AECS Layout ITPL Main Road Kundalahalli, </span><br><br>
           <span>Bengaluru  Karnatak 560037, india </span> </p>
